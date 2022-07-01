@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Se le dio estilo al encabezado con una imagen de fondo con degradado*/  
+.header{
+    background-image: linear-gradient(36deg, rgba(20,240,8,0.700717787114846) 0%, rgba(16,155,177,0.700717787114846) 55%, rgba(0,212,255,1) 100%), url("../img/estru.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textop{
+    height: 600px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textop h1{
+    font-size: 130px;
+    text-align: center;
+    font-family: georgia;
+}
+
+.textop p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.textop a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #B0129B;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/*Se le agrego estilos a la barra de navegacion*/
+.barra{
+    background-image: linear-gradient(36deg, rgba(20,240,8,0.700717787114846) 0%, rgba(16,155,177,0.700717787114846) 55%, rgba(0,212,255,1) 100%);
+}
+
+.nav-enlace{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    width: 24.7%;
+    text-align: center;
+}
+
+.nav-enlace:hover{
+    background: skyblue;
+}
+
+.listado{
+    padding: 10px 12%;
+}
+
+.lista{
+    display: block;
+    font-family: georgia;
+    text-align: justify;
+    color: #fff;
+}
+
+/* Estilos generales */
+
+body{
+    background-image: linear-gradient(180deg, rgba(34,107,240,1) 0%, rgba(18,93,172,1) 0%, rgba(111,21,179,1) 90%);
+}
+
+.contenedor,
+.ola-contenedor{
+    width: 100%;
+    height: 93%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor{
+    padding: 80px 0 20px 0;
+}
+
+.conten,
+.ola-conten{
+    width: 100%;
+    height: 50%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.conten{
+    padding: 20px 0 5px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+}
+
+.regis{
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    /*margin-left: 80px;*/
+}
+
+/* Section */
+
+.ctm{
+
+}
+
+.ctm input{
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.ctm label{
+    width: 40%;
+}   
+
+.radio-inline input{
+    width: 10%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer{
+    background-image: linear-gradient(90deg, rgba(20,240,8,0.700717787114846) 0%, rgba(16,155,177,0.700717787114846) 55%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    text-align: center;
+}
+/*
+.enl{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, rgba(129, 232, 37, 1.0) 0%, rgba(23, 207, 5, 1.0) 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+    margin: 10px;
+}
+
+.fb .insta .twi{
+    color: #fff;
+}
+*/
+
+.conten{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    width: 8rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook{
+    background: #2E406E;
+    border-radius: 1rem 0 0 0;
+}
+
+.icon-instagram{
+    background:  #C429D9 ;
+}
+
+.icon-twitter{
+    background: #339DC5;
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+    padding-right: 5rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
+
+@media screen and (max-width:800px){
+    .textop h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    /* estilos generales */
+    .titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:700px){
+    .textop h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 30px;   
+    }
+
+    .textop p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .regis{
+        width: 150%;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .textop h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 30px;   
+    }
+
+    .textop p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .regis{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:200px){
+    .textop h1{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 20px;   
+    }
+
+    .textop p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contene{
+        padding: 10px 0;
+    }
+
+    .cuadro{
+        height: 100%;
+        width: 90%;
+        margin-bottom: 10px;   
+    }
+
+    .regis{
+        width: 210px;
+    }
+
+    .regis h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@keyframes ilustrationAnimate{
+    0%{
+        transform: scale(1.08);
+    }100%{
+        transform: scale(1.0);
+    }
+}
